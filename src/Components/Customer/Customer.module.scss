@@ -1,0 +1,127 @@
+.container {
+  background-color: white;
+  width: 90%;
+  margin: 0 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.userContainer {
+  height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.userHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 40px 10px;
+  margin-bottom: 30px;
+}
+
+.back {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #6a6a6a;
+  cursor: pointer;
+  display: flex;
+
+  img {
+    height: 24px;
+    padding-top: 2px;
+    padding-right: 5px;
+  }
+}
+
+.activationContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.activationMessage {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #6a6a6a;
+  margin-right: 20px;
+}
+
+.active {
+  color: #9bd338;
+  text-transform: capitalize;
+}
+
+.deactivated {
+  color: #ea4d39;
+  text-transform: capitalize;
+}
+
+.userInfo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  margin-top: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name {
+  color: #282c34;
+  font-weight: bold;
+  font-size: 46px;
+  margin: 10px 0;
+}
+
+.profileImage {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 440px;
+  .info {
+    margin-bottom: 10px;
+    color: #282c34;
+    font-size: 16px;
+    text-align: initial;
+  }
+
+  .about {
+    font-style: italic;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    background-color: #282c34;
+    color: white;
+    font-size: 16px;
+    text-align: initial;
+    padding: 10px 15px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+  }
+}
