@@ -84,13 +84,11 @@ export const loadUsersDigest = (): ThunkAction<
     /**
      * Getting digest value in chunks of 10.
      */
-    const newUsers = [...users]
-
     const start = ittr * chunkSize;
 
     const end = start + chunkSize;
 
-    const promises = newUsers.splice(start, end).map(getUserDigest);
+    const promises = users.slice(start, end).map(getUserDigest);
 
     const responses = await Promise.all(promises);
 
